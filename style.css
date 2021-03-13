@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #e5e5e5;
+}
+body::before{
+    content: '';
+    position: absolute;
+    width: 1106px;
+    height: 1106px;
+    left: -449px;
+    top: -370px;
+    background: rgba(248, 206, 236, 0.98);
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: -1;
+}
+body::after{
+    content: '';
+    position: absolute;
+    width: 906px;
+    height: 906px;
+    left: 832px;
+    top: -98px;
+    background: rgba(195, 173, 246, 0.98);
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: -1;
+}
+section {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+section .ellipse{
+    position: absolute;
+    background: linear-gradient(321.81deg, 
+    #B39DE7 14.52%, 
+    #FCE9FF 76.14%, 
+    #FCE9FF 76.14%);
+    border-radius: 50%;
+    z-index: 1;
+}
+section .ellipse:nth-child(1){
+    width: 105px;
+    height: 105px;
+    left: 617px;
+    top: 78px;
+}
+section .ellipse:nth-child(2){
+    width: 196px;
+    height: 196px;
+    left: 832px;
+    top: 309px;
+}
+section .ellipse:nth-child(3){
+    width: 135px;
+    height: 135px;
+    left: 194px;
+    top: 687px;
+}
+section .ellipse:nth-child(4){
+    width: 239px;
+    height: 239px;
+    left: 1358px;
+    top: 505px;
+}
+
+.main{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 76px);
+    margin-top: 38px;
+    margin-left: 42px;
+    margin-bottom: 38px;
+    margin-right: 42px;
+    background: radial-gradient(100% 249.45% at 0% 2.78%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(22px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 33px;
+}
+.main header{
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.main header .logo{
+    margin-top: 40px;
+    margin-left: 55px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+.main header .logo h2{
+    margin: 0;
+}
+.main header .logo h2 span{ 
+    color: #3672e9;
+}
+
+.main header .menu-top{
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+}
+.main header .menu-top li{
+    width: 70px;
+}
+.main header .menu-top li a{
+    font-family: Poppins;
+    color: #3672e9;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 123px);
+    overflow: scroll;
+}
+.horizontal{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.sale-card{
+    width: 50%;
+    height: 280px;
+    display: inline-flex;
+    overflow: hidden;
+    background: radial-gradient(100% 249.45% at 0% 2.78%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 2px solid #ffffffcc;
+    backdrop-filter: blur(22px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 33px;
+}
+.sale-card img{
+    width: 50%;
+    height: 175%;
+    align-self: center;
+}
+.sale-card .right-card{
+    align-self: center;
+    font-family: Poppins;
+    color: #655f5f;
+    margin-right: 30px;
+}
+.sale-card .right-card h3{
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #615F5F;
+}
+.sale-card .right-card p{
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 0.015em;
+}
+.sale-card .right-card a{
+    background: #3672E9;
+    box-shadow: 0px 20px 50px rgba(54, 114, 233, 0.41);
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bookmark-container{
+    margin-left: 40px;
+}
+.bookmark-container .bookmark-card{
+    width: 300px;
+    height: 120px;
+    background: radial-gradient(100% 249.45% at 0% 2.78%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(22px);
+    /* Note: backdrop-filter has minimal browser support */
+    margin: 10px;
+    border-radius: 17px;
+    display: flex;
+}
+.bookmark-container .bookmark-card img{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    margin-left: 18px;
+    border-radius: 16px;
+}
+.bookmark-container .bookmark-card .right-card{
+    align-self: center;
+    font-family: Poppins;
+    color: #615f5f;
+    margin-left: 20px;
+}
+.bookmark-container .bookmark-card .right-card i{
+    font-size: 15;
+    color: #3672e9da;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.bookmark-container .bookmark-card .right-card h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    text-overflow: 0;
+}
+
+.bookmark-container .bookmark-card .right-card p{
+    margin: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+}
+.bookmark-container .bookmark-card .right-card .rate{
+    width: 32px;
+    height: 16px;
+    font-size: 9.5px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    background: #F2C655;
+    border-radius: 3.8px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu-selection{
+    list-style: none;
+    margin-top: 30px;
+    height: 200px;
+}
+.menu-selection li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-selection li a{
+    opacity: 0.6;
+    text-decoration: none;
+}
+.menu-selection li a:focus{
+    opacity: 1;
+}
+.menu-selection li a i{
+    color: #3672E9;
+    width: 30px;
+    align-content: center;
+}
+
+.menu-selection li a span{
+    color: #615F5F;
+    font-family: Poppins;
+    margin-left: 25px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    list-style: none;
+    align-self: center;
+}
+.list li{
+    margin: 10px;
+    width: 245px;
+    height: 230px;
+    font-family: Poppins;
+    display: flex;
+    color: #615F5F;
+    flex-direction: column;
+    background: radial-gradient(100% 249.45% at 0% 2.78%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(22px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+}
+.list li img{
+    align-self: center;
+    margin-top: 12px;
+}
+.list li h3{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.list li a{
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 15px;
+}
+.list li div{
+    display: flex;
+    margin-left: 15px;
+}
+.list li div p{
+    font-style: normal;
+    font-weight: bold;
+    flex: 1;
+    font-size: 10px;
+    line-height: 15px;
+}
+.list li div i{
+    align-self: center;
+    margin-right: 15px;
+}
+#hamburger{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 30px;
+    color: #3672e9;
+    cursor: pointer;
+    visibility: hidden;
+}
+.toggle{
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.toggle ul{
+    list-style: none;
+    margin-top: 40px;
+}
+.toggle i{
+    position: absolute;
+    font-size: 30;
+    color: #3672e9;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.toggle ul li{
+    font-family: Poppins;
+    color: #3672e9;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+body .active{
+    left: 0px;
+}
+@media screen and (max-width: 1000px){
+    .main{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .horizontal{
+        flex-direction: column;
+    }
+    .sale-card{
+        width: 80% ;
+        align-self: center;
+        margin-left: 0;
+    }
+    .bookmark-container{
+        margin-top: 10px;
+        margin-left: 0 ;
+        width: 90%;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .bookmark-container .bookmark-card{
+        width: 45%;
+    }
+    .menu-selection{
+        display: flex ;
+        flex-wrap: wrap  ;
+        width: 90%;
+        height: auto ;
+        justify-content: space-around;
+    }
+    .list{
+        width: 90% ;
+        align-self: center;
+    }
+    .menu-top{
+        visibility: hidden;
+        height: 0px;
+    }
+    .logo{
+        text-align: center;
+        margin: 0;
+    }
+    #hamburger{
+        visibility: visible;
+        z-index: 9999;
+    }
+    .toggle{
+        visibility: visible;
+    }
+}
